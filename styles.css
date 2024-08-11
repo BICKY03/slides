@@ -1,0 +1,122 @@
+.carousel {
+    padding: 20px; /* Reduced padding for responsiveness */
+}
+.splide__slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* Added border radius for images */
+}
+.text-overlay {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    width: 500px;
+}
+.text-overlay p {
+    font-size: 1em;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.text-overlay h1 {
+    margin: 10px 0;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+.shop-button {
+    width: 100px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 0.8em;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center; 
+}
+.shop-button:hover {
+    background-color: #f0f0f0;
+    color: #FF4500;
+}
+.splide__slide {
+    position: relative;
+}
+#position-selector {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Custom Dropdown Styling */
+#position-selector select {
+    font-size: 1em;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+#position-selector select:focus {
+    border-color: #FF4500; /* Highlight border on focus */
+}
+#position-selector label {
+    font-size: 1em;
+    margin-right: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .text-overlay {
+        padding: 5px;
+    }
+    .text-overlay h1 {
+        font-size: 1.2em;
+    }
+    .shop-button {
+        width: 80px;
+        padding: 5px 10px;
+        font-size: 0.7em;
+    }
+    #position-selector select {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay h1 {
+        font-size: 1em;
+    }
+    .shop-button {
+        width: 70px;
+        padding: 4px 8px;
+        font-size: 0.6em;
+    }
+    #position-selector select {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+    .splide__slide img {
+        /* Adjust image size on mobile */
+        width: 110%; /* Increase width to make image appear larger */
+        margin-left: -5%;
+        border-radius: 8px;
+    }
+}

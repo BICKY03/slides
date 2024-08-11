@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Dropdown Carousel</title>
+    <!-- Splide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.11/dist/css/splide.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="position-selector">
+        <label for="position">Select Position:</label>
+        <select id="position">
+            <option value="position-top-start">Top Start</option>
+            <option value="position-top-center">Top Center</option>
+            <option value="position-top-end">Top End</option>
+            <option value="position-middle-start">Middle Start</option>
+            <option value="position-middle-center" selected>Middle Center</option>
+            <option value="position-middle-end">Middle End</option>
+            <option value="position-bottom-start">Bottom Start</option>
+            <option value="position-bottom-center">Bottom Center</option>
+            <option value="position-bottom-end">Bottom End</option>
+        </select>
+    </div>
+
+    <div class="carousel">
+        <section id="image-carousel" class="splide" aria-label="Image Carousel">
+            <div class="splide__track">
+                <ul class="splide__list" id="carousel-slides">
+                    <!-- Slides will be generated dynamically here -->
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Splide JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.11/dist/js/splide.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
