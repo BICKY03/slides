@@ -47,6 +47,7 @@
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Button Styles */
 .shop-button {
     width: 100px;
     margin-top: 10px;
@@ -58,7 +59,7 @@
     border-radius: 10px;
     text-decoration: none;
     cursor: pointer;
-    text-align: center; 
+    text-align: center;
 }
 
 .shop-button:hover {
@@ -66,12 +67,12 @@
     color: #FF4500;
 }
 
+/* Select Element Styles */
 #position-selector {
     margin-bottom: 20px;
     text-align: center;
 }
 
-/* Custom Dropdown Styling */
 #position-selector select {
     font-size: 1em;
     padding: 10px;
@@ -98,11 +99,19 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
     .text-overlay {
-        padding: 5px;
+        padding: 10px; /* Increased padding for text overlay */
+        width: calc(100% - 20px); /* Adjust width for smaller screens */
+    }
+
+    .text-overlay p {
+        font-size: 0.8em; /* Decrease font size for paragraph */
     }
 
     .text-overlay h1 {
-        font-size: 1.2em;
+        font-size: 1.2em; /* Decrease font size for heading */
+        margin-bottom: 20px; /* Increase space below heading */
+        padding: 5px 10px; /* Add padding to the description */
+        text-align: center; /* Center align text */
     }
 
     .shop-button {
@@ -115,11 +124,30 @@
         font-size: 0.9em;
         padding: 8px;
     }
+
+    .splide__slide img {
+        width: 100%; /* Ensure image width fits within container */
+        height: 300px; /* Increase image height for better use of space */
+        border-radius: 8px; /* Adjusted border radius */
+        object-fit: cover; /* Maintain aspect ratio */
+    }
 }
 
 @media (max-width: 480px) {
+    .text-overlay {
+        padding: 10px; /* Increased padding for text overlay */
+        width: calc(100% - 20px); /* Adjust width for smaller screens */
+    }
+
+    .text-overlay p {
+        font-size: 0.7em; /* Further decrease font size for paragraph */
+    }
+
     .text-overlay h1 {
-        font-size: 1em;
+        font-size: 1em; /* Further decrease font size for heading */
+        margin-bottom: 20px; /* Increase space below heading */
+        padding: 5px 10px; /* Add padding to the description */
+        text-align: center; /* Center align text */
     }
 
     .shop-button {
@@ -134,8 +162,9 @@
     }
 
     .splide__slide img {
-        width: 100%; /* Ensure image does not exceed container width */
-        margin-left: 0; /* Remove negative margin to avoid overlap */
+        width: 100%; /* Ensure image takes full width */
+        height: 250px; /* Further increase image height */
         border-radius: 8px;
+        object-fit: cover; /* Maintain aspect ratio */
     }
 }
