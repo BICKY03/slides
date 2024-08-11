@@ -1,12 +1,22 @@
+/* Base Styles */
 .carousel {
     padding: 20px; /* Reduced padding for responsiveness */
+    overflow: hidden; /* Hide overflow to prevent images from overlapping */
 }
+
+.splide__slide {
+    position: relative;
+    box-sizing: border-box; /* Ensure padding/border does not affect width calculation */
+}
+
 .splide__slide img {
-    width: 100%;
+    width: 100%; /* Ensure image width fits within container */
     height: auto;
     display: block;
     border-radius: 10px; /* Added border radius for images */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
 }
+
 .text-overlay {
     position: absolute;
     color: white;
@@ -18,6 +28,7 @@
     transition: all 0.3s ease-in-out;
     width: 500px;
 }
+
 .text-overlay p {
     font-size: 1em;
     margin: 0;
@@ -28,12 +39,14 @@
     background: rgba(0, 0, 0, 0.5);
     text-align: center;
 }
+
 .text-overlay h1 {
     margin: 10px 0;
     font-size: 40px;
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
+
 .shop-button {
     width: 100px;
     margin-top: 10px;
@@ -47,13 +60,12 @@
     cursor: pointer;
     text-align: center; 
 }
+
 .shop-button:hover {
     background-color: #f0f0f0;
     color: #FF4500;
 }
-.splide__slide {
-    position: relative;
-}
+
 #position-selector {
     margin-bottom: 20px;
     text-align: center;
@@ -71,9 +83,11 @@
     cursor: pointer;
     transition: border-color 0.3s ease;
 }
+
 #position-selector select:focus {
     border-color: #FF4500; /* Highlight border on focus */
 }
+
 #position-selector label {
     font-size: 1em;
     margin-right: 10px;
@@ -86,14 +100,17 @@
     .text-overlay {
         padding: 5px;
     }
+
     .text-overlay h1 {
         font-size: 1.2em;
     }
+
     .shop-button {
         width: 80px;
         padding: 5px 10px;
         font-size: 0.7em;
     }
+
     #position-selector select {
         font-size: 0.9em;
         padding: 8px;
@@ -104,19 +121,21 @@
     .text-overlay h1 {
         font-size: 1em;
     }
+
     .shop-button {
         width: 70px;
         padding: 4px 8px;
         font-size: 0.6em;
     }
+
     #position-selector select {
         font-size: 0.8em;
         padding: 6px;
     }
+
     .splide__slide img {
-        /* Adjust image size on mobile */
-        width: 110%; /* Increase width to make image appear larger */
-        margin-left: -5%;
+        width: 100%; /* Ensure image does not exceed container width */
+        margin-left: 0; /* Remove negative margin to avoid overlap */
         border-radius: 8px;
     }
 }
