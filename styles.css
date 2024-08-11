@@ -1,8 +1,4 @@
 /* Base Styles */
-body {
-    font-family: 'Open Sans', sans-serif; /* Default font for the body text */
-}
-
 .carousel {
     padding: 20px; /* Reduced padding for responsiveness */
     overflow: hidden; /* Hide overflow to prevent images from overlapping */
@@ -31,12 +27,9 @@ body {
     padding: 10px;
     transition: all 0.3s ease-in-out;
     width: 500px;
-    text-align: center; /* Center text alignment */
-    font-family: 'Open Sans', sans-serif; /* Apply font family */
 }
 
 .text-overlay p {
-    font-family: 'Open Sans', sans-serif; /* Font for paragraph text */
     font-size: 1em;
     margin: 0;
     font-weight: bold;
@@ -48,17 +41,14 @@ body {
 }
 
 .text-overlay h1 {
-    font-family: 'Lora', serif; /* Font for heading text */
     margin: 10px 0;
     font-size: 40px;
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    text-align: center; /* Center align heading text */
 }
 
 /* Button Styles */
 .shop-button {
-    font-family: 'Roboto', sans-serif; /* Font for button text */
     width: 100px;
     margin-top: 10px;
     padding: 10px 20px;
@@ -84,7 +74,6 @@ body {
 }
 
 #position-selector select {
-    font-family: 'Open Sans', sans-serif; /* Font for select options */
     font-size: 1em;
     padding: 10px;
     border: 2px solid #333;
@@ -101,7 +90,6 @@ body {
 }
 
 #position-selector label {
-    font-family: 'Open Sans', sans-serif; /* Font for label text */
     font-size: 1em;
     margin-right: 10px;
     color: #333;
@@ -113,7 +101,6 @@ body {
     .text-overlay {
         padding: 10px; /* Increased padding for text overlay */
         width: calc(100% - 20px); /* Adjust width for smaller screens */
-        text-align: center; /* Center text alignment */
     }
 
     .text-overlay p {
@@ -124,6 +111,7 @@ body {
         font-size: 1.2em; /* Decrease font size for heading */
         margin-bottom: 20px; /* Increase space below heading */
         padding: 5px 10px; /* Add padding to the description */
+        text-align: center; /* Center align text */
     }
 
     .shop-button {
@@ -138,11 +126,10 @@ body {
     }
 
     .splide__slide img {
-        width: 110%; /* Increase width of image */
-        height: 350px; /* Increase height of image */
+        width: 100%; /* Ensure image width fits within container */
+        height: 300px; /* Increase image height for better use of space */
         border-radius: 8px; /* Adjusted border radius */
         object-fit: cover; /* Maintain aspect ratio */
-        margin-left: -5%; /* Adjust to center image */
     }
 }
 
@@ -150,7 +137,6 @@ body {
     .text-overlay {
         padding: 10px; /* Increased padding for text overlay */
         width: calc(100% - 20px); /* Adjust width for smaller screens */
-        text-align: center; /* Center text alignment */
     }
 
     .text-overlay p {
@@ -161,6 +147,7 @@ body {
         font-size: 1em; /* Further decrease font size for heading */
         margin-bottom: 20px; /* Increase space below heading */
         padding: 5px 10px; /* Add padding to the description */
+        text-align: center; /* Center align text */
     }
 
     .shop-button {
@@ -175,11 +162,10 @@ body {
     }
 
     .splide__slide img {
-        width: 120%; /* Further increase width of image */
-        height: 300px; /* Further increase height of image */
+        width: 100%; /* Ensure image takes full width */
+        height: 250px; /* Further increase image height */
         border-radius: 8px;
         object-fit: cover; /* Maintain aspect ratio */
-        margin-left: -10%; /* Adjust to center image */
     }
 }
 
